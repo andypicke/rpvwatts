@@ -1,3 +1,9 @@
+#' Construct URL for API query
+#' @param req_defaults Required parameters for API request
+#' @param api_key API key. Default is Sys.getenv("PVWATTS_KEY")
+#' @returns req_url URL for API request
+#' @export
+
 construct_query_url <- function(req_defaults, api_key =Sys.getenv("PVWATTS_KEY")){
 
   base_url <- "https://developer.nrel.gov/api/pvwatts/v8.json"
